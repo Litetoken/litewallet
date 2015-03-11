@@ -1,5 +1,5 @@
 {
-  "servers": [ "https://api.litetokens.co" ],
+  "servers": [ "https://api.czarcraft.co" ],
   "forceTestnet": false,
   "googleAnalyticsUA": "UA-21065583-20",
   "googleAnalyticsUA-testnet": "UA-21065583-20",
