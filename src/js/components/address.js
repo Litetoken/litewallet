@@ -30,8 +30,8 @@ function AddressViewModel(type, key, address, initialLabel, armoryPubKey) {
   self.withMovement = ko.observable(false);
 
   self.assets = ko.observableArray([
-    new AssetViewModel({address: address, asset: "BTC"}), //will be updated with data loaded from insight
-    new AssetViewModel({address: address, asset: "XCP"})  //will be updated with data loaded from counterpartyd
+    new AssetViewModel({address: address, asset: "LTC"}), //will be updated with data loaded from insight
+    new AssetViewModel({address: address, asset: "XLT"})  //will be updated with data loaded from litetokensd
   ]);
   
   self.assetFilter = ko.observable('');
@@ -40,7 +40,7 @@ function AddressViewModel(type, key, address, initialLabel, armoryPubKey) {
       return self.assets();
     } else if(self.assetFilter() == 'base') {
       return ko.utils.arrayFilter(self.assets(), function(asset) {
-        return asset.ASSET == 'BTC' || asset.ASSET == 'XCP';
+        return asset.ASSET == 'LTC' || asset.ASSET == 'XLT';
       });      
     } else if(self.assetFilter() == 'mine') {
       return ko.utils.arrayFilter(self.assets(), function(asset) {
@@ -130,7 +130,7 @@ function AddressViewModel(type, key, address, initialLabel, armoryPubKey) {
         return item.ASSET === asset;
     });
     
-    if(asset == 'BTC' || asset == 'XCP') { //special case update
+    if(asset == 'LTC' || asset == 'XLT') { //special case update
       assert(match, 'was created when the address viewmodel was initialized...');
       match.rawBalance(initialRawBalance);
       match.escrowedBalance(escrowedBalance);
@@ -262,9 +262,9 @@ function AddressViewModel(type, key, address, initialLabel, armoryPubKey) {
   self.createAsset = function() {
     if(!WALLET.canDoTransaction(self.ADDRESS)) return false;
 
-    var xcpBalance = WALLET.getBalance(self.ADDRESS, 'XCP');
-    if(xcpBalance < ASSET_CREATION_FEE_XCP) {
-      bootbox.alert(i18n.t("no_enough_for_issuance_fee", ASSET_CREATION_FEE_XCP, xcpBalance));
+    var xltBalance = WALLET.getBalance(self.ADDRESS, 'XLT');
+    if(xltBalance < ASSET_CREATION_FEE_XLT) {
+      bootbox.alert(i18n.t("no_enough_for_issuance_fee", ASSET_CREATION_FEE_XLT, xltBalance));
       return false;
     }
 
@@ -326,7 +326,7 @@ function AddressViewModel(type, key, address, initialLabel, armoryPubKey) {
   }
 
   self.showBaseAssetsOnly = function() {
-    self.assetFilter('base'); //Show XCP and BTC only
+    self.assetFilter('base'); //Show XLT and LTC only
   }
 
   self.showMyAssetsOnly = function() {
@@ -337,11 +337,11 @@ function AddressViewModel(type, key, address, initialLabel, armoryPubKey) {
     self.assetFilter('others'); //Show other's (foreign) assets only
   }
 
-  self.getXCPBalance = function() {
-    var xcpAsset =  $.grep(self.assets(), function (value) {
-        return value.ASSET == 'XCP';
+  self.getXLTBalance = function() {
+    var xltAsset =  $.grep(self.assets(), function (value) {
+        return value.ASSET == 'XLT';
     });
-    return xcpAsset[0].normalizedBalance();
+    return xltAsset[0].normalizedBalance();
   }
 
 }

@@ -1,4 +1,4 @@
-//Counterwallet-specific utility functions
+//Litewallet-specific utility functions
 
 function formatHtmlPrice(price) {
   num = noExponents(parseFloat(price).toFixed(8));

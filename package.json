@@ -1,12 +1,12 @@
 {
-  "name": "counterwallet",
-  "description": "Counterwallet",
-  "author": "Counterparty development team",
+  "name": "litewallet",
+  "description": "Litewallet",
+  "author": "Litetokens development team",
   "version": "1.5.0",
   "main": "build/index.html",
   "repository": { 
     "type" : "git",
-    "url" : "https://github.com/CounterpartyXCP/counterwallet.git"
+    "url" : "https://github.com/LitetokensXLT/litewallet.git"
   },
   "dependencies": {
     "grunt": "0.4.1",

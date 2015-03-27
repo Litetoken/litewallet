@@ -1,7 +1,7 @@
-Counterwallet
+Litewallet
 ================
 
-Online Webwallet for [Counterparty](http://www.counterparty.co).
+Online Webwallet for [Litetokens](http://www.litetokens.co).
 
 Originally based off of [Carbonwallet](http://www.carbonwallet.com) (however virtually all the original code has been removed or rewritten).
 
@@ -9,15 +9,15 @@ Originally based off of [Carbonwallet](http://www.carbonwallet.com) (however vir
 Production Systems
 -------------------
 
-* Mainnet: **[counterwallet.co](https://www.counterwallet.co/)**
-* Testnet: **[testnet.counterwallet.co](https://testnet.counterwallet.co/)**
+* Mainnet: **[litewallet.co](https://www.litewallet.co/)**
+* Testnet: **[testnet.litewallet.co](https://testnet.litewallet.co/)**
 
 
 Features
 ----------
 
 - Deterministic wallet addresses (BIP 32-based)
-- Supports the majority of Counterparty functionality
+- Supports the majority of Litetokens functionality
 - Fully-AJAX driven
 - Anonymous
 - Runs in the browser, with keys created in memory
@@ -68,10 +68,10 @@ grunt build
 grunt freeze
 ```
 
-Setting up your own Counterwallet Server
+Setting up your own Litewallet Server
 -----------------------------------------
 
-See [this link](https://github.com/CounterpartyXCP/counterpartyd_build/blob/master/docs/SettingUpAFederatedNode.rst) for more info.
+See [this link](https://github.com/LitetokensXLT/litetokensd_build/blob/master/docs/SettingUpAFederatedNode.rst) for more info.
 
 
 Licence
