@@ -7,7 +7,7 @@
         "underscore.string": "2.3.3",
         "bootstrap": "3.1.1",
         "smartadmin": "https://github.com/litetokens/litesmartadmin.git#c7049658057b26747833f18085255a795f10b581",
-        "litewebdeps": "https://github.com/litetokens/litewebdeps.git#1e30efdc8a0e03167c0f606eddd464c8ccb319bc",
+        "litewebdeps": "https://github.com/litetokens/litewebdeps.git#9e5d701b66f90843d7cd2ca10fa3350102ecd821",
         "cryptojs": "https://crypto-js.googlecode.com/files/CryptoJS%20v3.1.2.zip",
         "rollbar": "1.1.7",
         "bootbox": "4.2.0",

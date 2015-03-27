@@ -62,7 +62,7 @@
     "src/vendors/litewebdeps/js/consts.js": "c4d277252a4a5f2faebf610cbd2da324cd164aa7e23ca57769599dd0298a8456",
     "src/vendors/litewebdeps/js/util.generic.js": "4932e841727164dbb3ae190c09b0a2fe9d6c1eb110a2b8c8f77553e2ea9d3ef0",
     "src/vendors/litewebdeps/js/util.analytics.js": "e2ae8dd7b29ab24b2b5265b139bd558a90b470eb639a6bd7ad1ffd29c4826a53",
-    "src/vendors/litewebdeps/js/util.bitcore.js": "6662132373750042cef2a3c3fa4e65a58a65d3db2888ce73b48682a9b6c7898a",
+    "src/vendors/litewebdeps/js/util.bitcore.js": "eb193c58f773821ae5c8b23e68ece8f52ffedf6e83dc0e25233e3ab1dd44c23d",
     "src/vendors/litewebdeps/js/util.api.js": "2ab640688a1696d1c773c2dcc213273e4d3c1cc3a441cbc6b8422f98aa50b89f",
     "src/vendors/litewebdeps/js/util.litecoin.js": "07957865ef9513f9ef4d3e37716eb4b7bc30070a420024a5d48ae6996fa28be8"
 }
